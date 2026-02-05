@@ -1,0 +1,152 @@
+body{
+  padding-bottom:1000px;
+  padding-top:85px;
+  padding-right:24px;
+  padding-left:96px;
+  margin-top:0;
+  margin-left:0;
+  margin-right:0;
+  background-color:rgb(248, 248, 248);
+}
+.header{
+  background-color: white;
+  display:flex;
+  flex-direction:row;
+  height:55px;
+  position:fixed;
+  z-index:100;
+  top:0;
+  right:0;
+  left:0;
+  border-bottom:1px solid rgb(235, 235, 235);
+  justify-content: space-between;
+}
+.left{
+  display:flex;
+  align-items:center;
+}
+.ham{
+  height:24px;
+  margin-left:24px;
+  margin-right:24px;
+}
+.logo{
+  height:20px;
+}
+
+.mid{
+  flex:1;
+  margin-right:30px;
+  margin-left:70px;
+  max-width:500px;
+  display:flex;
+  align-items:center;
+}
+.searchbar{
+  flex:1;
+  width:0;
+  height:37px;
+  padding-left:10px;
+  font-size:16px;
+  border-width:0.5px;
+  border-radius:2px 0 0 2px;
+  border-style:solid;
+  box-shadow:inset 1px 2px 3px rgba(0,0,0,0.05);
+  border-color: rgb(188, 186, 186);
+}
+.searchbar::placeholder{
+  font-family:Roboto,Arial;
+  font-size:16px;
+}
+.searchbut{
+ height:39.5px;
+ border-radius:0 2px 2px 0;
+ width:66px;
+ border-style:solid;
+ border-width:0.5px;
+ box-shadow:inset 1px 2px 3px rgba(0,0,0,0.05);
+ border-color:rgb(188, 186, 186);
+ background-color: rgb(248, 248, 248);
+
+}
+.searchbut,.voice,.upload,.apps,.noti{
+   position:relative;
+   display:flex;
+   justify-content: center;
+}
+.searchicon{
+  height:25px;
+  margin-top:4px;
+}
+.searchbut .tooltip,.voice .tooltip,.upload .tooltip,.apps .tooltip,.noti .tooltip{
+  background-color: gray;
+  pointer-events:none;
+  white-space:nowrap;
+  position:absolute;
+  color:white;
+  padding-left:8px;
+  font-family:Roboto,Arial;
+  padding-right:8px;
+  padding-top:4px;
+  padding-bottom:4px;
+  border-radius:4px;
+  font-size:12px;
+  bottom:-30px;
+  Opacity:0;
+  cursor:pointer;
+  transition:Opacity 0.15s;
+}
+.searchbut:hover .tooltip,.voice:hover .tooltip,.upload:hover .tooltip,.apps:hover .tooltip,.noti:hover .tooltip{
+  opacity:1;
+}
+.voice{
+  height:40px;
+  width:40px;
+  border:none;
+  margin-left:8px;
+  border-radius:20px;
+background-color: rgb(248, 248, 248)
+}
+.voicebut{
+  height:24px;
+  margin-top:4px;
+}
+.right{
+  width:180px;
+  flex-shrink:0;
+  margin-right:24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.uploadicon{
+  height:24px;
+}
+.ytapps{
+  height:24px;
+}
+.notifications{
+  height:24px;
+}
+.channeldp{
+  height:32px;
+  border-radius:16px;
+}
+.count{
+  position:absolute;
+  z-index:100;
+  top:-2px;
+  right:-5px;
+  background-color:red;
+  font-family:Roboto,Arial;
+  font-size:11px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:2px;
+  padding-bottom:2px;
+  color:white;
+  border-radius:11px;
+}
+.noti{
+  position:relative;
+}
